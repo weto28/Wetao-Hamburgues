@@ -1,4 +1,4 @@
-## **README.md Descontraído para o seu Projeto de Hambúrgueres Artesanais**
+## **README.md Descontraído para o seu Projeto de Hambúrgueres Artesanais** - Imersão Dev com Google Gemini
 
 ### ** Wetão Hambúrgueres: Uma Jornada Gastronômica Digital!**
 
