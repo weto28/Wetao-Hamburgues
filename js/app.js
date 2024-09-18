@@ -4,7 +4,7 @@ function pesquisar() {
 
     let campoPesquisa = document.getElementById("campo-pesquisa").value
 
-    console.log(campoPesquisa);
+    //console.log(campoPesquisa);
 
     // se campoPesquisa for uma string sem nada 
     // if (campoPesquisa =="") {
@@ -16,7 +16,7 @@ function pesquisar() {
         section.innerHTML = "<p style='color: #dddddd; font-size: 24px; font-weight: bold;'>Não foram encontrados resultados, Digitar o que procura.</p>";
         return;
     }
-
+   
     campoPesquisa = campoPesquisa.toLowerCase()
 
     // Inicializa uma string vazia para armazenar os resultados da pesquisa
@@ -33,6 +33,8 @@ function pesquisar() {
 
         // se titulo includes campo includes campoPesquisa
         if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)){
+         
+
             // cria um novo elemento
             resultados += `
             <div class="item-resultado">
@@ -43,20 +45,11 @@ function pesquisar() {
                 <a href=${dado.link}" target="_blank">Mais informações</a>
             </div>
         `;
-        }
-
-        if (!resultados) {
-            resultados = "<p style='color: #dddddd; font-size: 24px; font-weight: bold;'>Não foram encontrados resultados</p>";
-        }
-       
+          
         }
 
     // Atualiza o conteúdo HTML da seção com os resultados da pesquisa
     section.innerHTML = resultados;
+  
 }
-
-
-
-
-
-
+}
